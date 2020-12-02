@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "/"
+baseurl = ""
 languageCode = "en-us"
 title = "Aroy"
 theme = "syna"
