@@ -91,18 +91,18 @@ lastmod = ["lastmod", ":git", "date"]
   weight = 50
 
 [[menu.footer]]
-  url = "#"
-  name = "Link"
+  url = "/portfolio"
+  name = "Portfolio"
   weight = 10
 
 [[menu.footer]]
-  url = "#"
-  name = "Long Link"
+  url = "/blog"
+  name = "Blog"
   weight = 30
 
 [[menu.footer]]
-  url = "#"
-  name = "Tiny Link"
+  url = "/about"
+  name = "About Me"
   weight = 30
 
 [[menu.copyright_footer]]
@@ -125,7 +125,7 @@ lastmod = ["lastmod", ":git", "date"]
   weight = 20
   name = "GitHub"
   pre = "fab fa-github"
-  url = "https://github.com/EDUDD22"
+  url = "https://github.com/Aroy-Art"
 
 [[menu.footer_social]]
   weight = 30
