@@ -13,7 +13,7 @@ title = "Contact Me"
 post_url = "https://example.com/mailout" #default: formspree.io
 email = "mail@example.com"
 button = "Send Button" # defaults to theme default
-#netlify = false
+netlify = true
 
 # Optional google captcha
 #[recaptcha]
