@@ -1,7 +1,7 @@
 +++
 fragment = "copyright"
 #disabled = true
-date = "2020-12-1"
+date = "2020-12-01"
 weight = 1250
 
 copyright = "" # default: Copyright $Year .Site.params.name
