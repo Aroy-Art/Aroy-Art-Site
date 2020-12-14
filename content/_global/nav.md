@@ -1,7 +1,7 @@
 +++
 fragment = "nav"
 disabled = false
-date = "2020-12-1"
+date = "2020-12-01"
 weight = 0
 background = "dark"
 search = true

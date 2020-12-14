@@ -1,11 +1,11 @@
 +++
 fragment = "footer"
 #disabled = true
-date = "2020-12-1"
+date = "2020-12-01"
 weight = 1200
 background = "secondary"
 
-menu_title = "Link Title"
+menu_title = "Index"
 
 [asset]
   title = "Logo Title"
