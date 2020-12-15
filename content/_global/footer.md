@@ -14,8 +14,7 @@ menu_title = "Index"
   url = "#"
 +++
 
-#### Description Title
-
-Project description such as:
-Open source theme for your next project
-Provided by Okkur Labs
+#### I am also on
+---
+[![](/images/logo-sketchfab-grey.png "https://sketchfab.com/Aroy-Art")](https://sketchfab.com/Aroy-Art)
+---
