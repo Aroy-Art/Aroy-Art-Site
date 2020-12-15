@@ -7,7 +7,7 @@ background = "light"
 align = "left"
 
 title = "Who am I"
-subtitle = "I am a self-taught artist and programmer and I do a lot of hardware work as well."
+subtitle = "I am a self-taught artist and programmer who lives in northern Sweden, and I do a lot of hardware work as well."
 
 # Subtitle pre and post item
 #pre = ""

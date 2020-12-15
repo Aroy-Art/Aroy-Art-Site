@@ -1,13 +1,16 @@
 +++
 fragment = "item"
-#disabled = false
+disabled = false
+
 date = "2017-10-04"
+lastmod = "2020-12-15"
+
 weight = 110
 background = "light"
 align = "right"
 
-#title = ""
-subtitle= "I am Levi Mattiasson and i am mostly going under the name EDUDD22."
+title = ""
+subtitle= "I am Levi Mattiasson and i am mostly going under the name Aroy."
 
 # Subtitle pre and post item
 #pre = ""
