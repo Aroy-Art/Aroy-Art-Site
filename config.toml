@@ -106,14 +106,14 @@ lastmod = ["lastmod", ":git", "date"]
   weight = 30
 
 [[menu.copyright_footer]]
-  url = "/about"
-  name = "About Me"
+  url = "/blog"
+  name = "Blog"
   weight = 10
 
-#[[menu.copyright_footer]]
-#  url = "#"
-#  name = "Another Link"
-#  weight = 30
+[[menu.copyright_footer]]
+  url = "/about"
+  name = "About Me"
+  weight = 20
 
 [[menu.footer_social]]
   weight = 10
