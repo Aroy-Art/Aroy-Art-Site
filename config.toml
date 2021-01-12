@@ -7,7 +7,7 @@ enableGitInfo = true
 version = "0.17.3"
 
 # Google Analytics tracking
-googleAnalytics = ""
+googleAnalytics = "G-PRFGX3RLE2"
 
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
