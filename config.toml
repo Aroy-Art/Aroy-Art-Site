@@ -4,10 +4,10 @@ languageCode = "en-us"
 title = "Aroy"
 theme = "syna"
 enableGitInfo = true
-version = "0.17.3"
+version = "0.17.4"
 
 # Google Analytics tracking
-googleAnalytics = "G-PRFGX3RLE2"
+googleAnalytics = ""
 
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
