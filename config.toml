@@ -119,13 +119,13 @@ lastmod = ["lastmod", ":git", "date"]
   weight = 10
   name = "Reddit"
   pre = "fab fa-reddit-alien"
-  url = "https://www.reddit.com/user/EDUDD22"
+  url = "https://www.reddit.com/user/Aroy-Art"
 
 [[menu.footer_social]]
   weight = 20
   name = "GitHub"
   pre = "fab fa-github"
-  url = "https://github.com/Aroy-Art"
+  url = "https://www.github.com/Aroy-Art"
 
 [[menu.footer_social]]
   weight = 30
