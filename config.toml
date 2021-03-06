@@ -1,141 +1,205 @@
-# Site settings
-baseurl = ""
-languageCode = "en-us"
-title = "Aroy"
-theme = "syna"
-enableGitInfo = true
-version = "0.17.3"
+baseURL                       = "https://example.com/"
+languageCode                  = "en-gb"
+title                         = "Wisnuwiry"
+theme                         = "personal-site"
+summaryLength                 = 10
 
-# Google Analytics tracking
-googleAnalytics = ""
+[Author] # Used in authorbox
+  name                        = "Aroy"
+  bio                         = ""
+  avatar                      = "img/avatar.png"
+  job                         = "Hobby programmer and artist."
+  gender                      = "male"
+  email                       = "Aroy-Art@pm.me"
 
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[Params]
+  subTitle                    = "Personal site, Blog, and Portfolio"
+  description                 = "I am a hobby programmer and artist."
+  images                      = ["img/avatar.png"]
+  copyright                   = "Aroy-Art" # Copyright holder, otherwise will use .Site.Title
+  opengraph                   = true # Enable OpenGraph if true
+  twitter_cards               = true # Enable Twitter Cards if true
+  mainSections                = ["post"] # Set main page sections
+  dateFormat                  = "January 02, 2006" # Change the format of dates
+  # customCSS                 = ["css/custom.css"] # Include custom CSS files
+  customJS                    = []
+  mainMenuAlignment           = "right" # Align main menu (desktop version) to the right side
+  authorbox                   = true # Show authorbox at bottom of single pages if true
+  comments                    = true # Enable comments for all site pages
+  related                     = true # Enable Related content for single pages
+  relatedMax                  = 5
+  mathjax                     = false # Enable MathJax for all site pages
+  hideNoPostsWarning          = false # Don't show no posts empty state warning in main page, if true
+  fontUnit                    = "em"
+  largestFontSize             = 2.5
+  smallestFontSize            = 1
+  googleSearchConsole         = ""
+  # GoogleAnalytics             = ""
+  # fb_admins                   = 
+  # fb_app_id                   = 
+  paginateLength              = 5
+  # adsenseId                   = 
+
+  # Google Search custom, more info: https://cse.google.com/cse/all
+  customSearchId              = "004021659876411083349:a2ysxpichpc"
+
+  endMessagePost              = "Wrong content? "
+  
+  # Link repo to edit content
+  editContentPageLink         = "https://github.com/Aroy-Art/Aroy-Art-Site/tree/main/conten"
+  
+  # Formspree form contact id, more info: https://cse.google.com/cse/all
+  formspreeId                 = ""
+  
+
+
+[Params.Hero]
+  title                       = "A Personal Site By Aroy"
+  desc                        = "Welcome to my Blog :)"
+
+[Params.Entry]
+  meta                        = ["date", "categories"] # Enable meta fields in given order
+  toc                         = true # Enable Table of Contents
+  tocOpen                     = false # Open Table of Contents block. Optional
+
+[Params.Featured]
+  previewOnly                 = false # Show only preview featured image
+
+[Params.Comments]
+  repository                  = "" # Repository to host your comment, ex: username/repo
+
+# Navigation bar
+[menu]
+
+[[menu.main]]
+identifier = "Post"
+pre = "📝"
+url = "/post" 
+weight = 1 
+
+[[menu.main]]
+identifier = "Snippet"
+pre = "⚒️"
+url = "/snippet" 
+weight = 2 
+
+[[menu.main]]
+identifier = "Project"
+pre = "🚧"
+url = "/project" 
+weight = 3 
+
+[[menu.main]]
+identifier = "About"
+pre = "😃"
+url = "/about" 
+weight = 4
+
+[[menu.main]]
+identifier = "Contact"
+pre = "🤙"
+url = "/contact" 
+weight = 5
+
+[Params.Breadcrumb]
+  enable                      = true # Enable breadcrumb block globally
+  homeText                    = "Home" # Home node text
+
+[Params.Social]
+#  twitter                     = "jhon-doe"
+#  telegram                    = "jhon-doe"
+# instagram                   = "jhon-doe"
+#  linkedin                    = "wisnu-saputra"
+  github                      = "Aroy-Art"
+#  gitlab                      = "jhon-doe"
+#  medium                      = "jhon-doe"
+  reddit                      = "https://www.github.com/Aroy-Art"
+
+[Params.Share] # Entry Share block
+  facebook                    = true
+  twitter                     = true
+  reddit                      = true
+  telegram                    = true
+  linkedin                    = true
+  pinterest                   = true
+
+# Web App Manifest settings
+# https://www.w3.org/TR/appmanifest/
+# https://developers.google.com/web/fundamentals/web-app-manifest/
+[Params.Manifest]
+  name                        = "Aroy"
+  shortName                   = "Aroy"
+  display                     = "standalone"
+  startUrl                    = "/?utm_source=homescreen"
+  backgroundColor             = "#8dc153"
+  themeColor                  = "#1da1f2"
+  description                 = "Personal Site By Aroy"
+  orientation                 = "portrait"
+  scope                       = "/"
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType                 = "application/json"
+    baseName                  = "manifest"
+    isPlainText               = true
+    notAlternative            = true
 
 [outputs]
-  home = ["HTML", "JSON"]
+  home                        = ["HTML", "RSS", "MANIFEST"]
 
-[frontmatter]
-date = ["date", "lastmod"]
-lastmod = ["lastmod", ":git", "date"]
+enableRobotsTXT               = true
 
+# Pagination
+Paginate                      = 3
+ 
+
+# Code
 [markup]
+   defaultMarkdownHandler    = "blackfriday"
   [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList          = true
+      footnote                = true
+      linkify                 = true
+      strikethrough           = true
+      table                   = true
+      taskList                = true
+      typographer             = true
+    [markup.goldmark.parser]
+      attribute               = true
+      autoHeadingID           = true
+      autoHeadingIDType       = "github"
     [markup.goldmark.renderer]
-     unsafe = true
-
-[params]
-  name = "Aroy Art"
-  description = "I am a hobby programmer and artist."
-
-  [params.style]
-    #background = "secondary"
-
-  # Theme customizations
-  # Assets relative to 'static/'
-  [params.custom]
-    favicon = "favicon.ico"
-    favicon_ico_sizes = "16x16 32x32"
-    favicon_png = "favicon.png"
-    favicon_svg = "favicon.svg"
-
-  # Piwik tracking
-  [params.analytics.piwik]
-    #url = ""
-    #id = ""
-    #domain = "" # Track subdomains via "*.example.com"
-    # Optional hash for integrity check
-    #hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
-
-  # Optional, global disable switch for fontawesome related files
-  # For custom fontawesome js files use the custom.js method
-  [params.fontawesome]
-    disabled = false
-    pro = false
-
-  [params.colors]
-    primary = "#4f0156" #"#350139" #"#00838F"
-    secondary = "#e4f2ff" #"#868e96"
-    success = "#008f54"
-    info = "#00c9dc"
-    warning = "#fdf314"
-    danger = "#dc1200"
-    light = "#f8f9fa"
-    dark = "#040b1e" #"#343a40"
-
-# main/prepend/postpend menus are displayed in nav fragment.
-# Keep an eye out for updates. These will be moved out to make navbar more
-# configurable.
-[[menu.main]]
-  url = "/"
-  name = "Home"
-  weight = 10
-
-[[menu.main]]
-  url = "/portfolio"
-  name = "Portfolio"
-  weight = 20
-
-[[menu.main]]
-  url = "/blog"
-  name = "Blog"
-  weight = 30
-
-[[menu.main]]
-  url = "/about"
-  name = "About Me"
-  weight = 40
-
-[[menu.main]]
-  url = "#contact"
-  name = "Contact"
-  weight = 50
-
-[[menu.footer]]
-  url = "/portfolio"
-  name = "Portfolio"
-  weight = 10
-
-[[menu.footer]]
-  url = "/blog"
-  name = "Blog"
-  weight = 30
-
-[[menu.footer]]
-  url = "/about"
-  name = "About Me"
-  weight = 30
-
-[[menu.copyright_footer]]
-  url = "/blog"
-  name = "Blog"
-  weight = 10
-
-[[menu.copyright_footer]]
-  url = "/about"
-  name = "About Me"
-  weight = 20
-
-[[menu.footer_social]]
-  weight = 10
-  name = "Reddit"
-  pre = "fab fa-reddit-alien"
-  url = "https://www.reddit.com/user/Aroy-Art"
-
-[[menu.footer_social]]
-  weight = 20
-  name = "GitHub"
-  pre = "fab fa-github"
-  url = "https://www.github.com/Aroy-Art"
-
-[[menu.footer_social]]
-  weight = 30
-  name = "Twitter"
-  pre = "fab fa-twitter"
-  url = "https://twitter.com/EDUDD22"
-
-[[menu.footer_social]]
-  weight = 40
-  name = "Discord"
-  pre = "fab fa-discord"
-  url = "https://discord.com/invite/25gW5KN"
-  
+      hardWraps               = false
+      unsafe                  = true
+      xhtml                   = false
+  [markup.blackFriday]
+    angledQuotes              = false
+    footnoteAnchorPrefix      = ""
+    footnoteReturnLinkContents= ""
+    fractions                 = true
+    hrefTargetBlank           = false
+    latexDashes               = true
+    nofollowLinks             = false
+    noreferrerLinks           = false
+    plainIDAnchors            = true
+    skipHTML                  = false
+    smartDashes               = true
+    smartypants               = true
+    smartypantsQuotesNBSP     = false
+    taskLists                 = true
+  [markup.highlight]
+    codeFences                = true
+    guessSyntax               = true
+    hl_Lines                  = ""
+    lineNoStart               = 1
+    lineNos                   = false
+    lineNumbersInTable        = false
+    noClasses                 = false
+    style                     = "dracula"
+    tabWidth                  = 4
+  [markup.tableOfContents]
+    endLevel                  = 6
+    ordered                   = false
+    startLevel                = 2
