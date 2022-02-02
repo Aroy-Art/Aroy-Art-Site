@@ -1,6 +1,6 @@
 [submodule "themes/syna"]
 	path = themes/syna
 	url = https://git.okkur.org/syna
-[submodule "themes/personal-site"]
-	path = themes/personal-site
-	url = https://github.com/wisnuwiry/personal-site.git
+[submodule "themes/BioTech"]
+	path = themes/BioTech
+	url = https://github.com/Aroy-Art/BioTech.git
