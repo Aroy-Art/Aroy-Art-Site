@@ -1,0 +1,93 @@
+#################################### portfolio ###############################
+portfolio:
+  enable : true
+  title : My Works
+  image_loaded_plugin: "/plugins/image-loaded/imagesloaded.pkgd.min.js"
+  portfolio_categories:
+    
+    - name : 2D Art
+      text_color : "#a521c1"
+      bg_color : "#57cbcc"
+      portfolio_items:
+
+      - name : Cyborg Cat
+        image : images/portfolio/Art/Skiss-01-V21.png 
+        tags : ["Krita", "2D", "Cyborg"]
+        content :
+        link : ""
+
+      # portfolio item loop
+      - name : Aroy icon version 2
+        image : images/portfolio/Art/image-5.png
+        tags : [""]
+        content : 
+        link : ""
+
+      # portfolio item loop
+      - name : Aroy icon version 2
+        image : images/portfolio/Art/image-3.png
+        tags : [""]
+        content : 
+        link : ""
+
+      # portfolio item loop
+      - name : Aroy Character version 1
+        image : images/portfolio/Art/image-2.png
+        tags : ["Furry", "Characters"]
+        content : 
+        link : ""
+
+      # portfolio item loop
+      - name : Furry Robot Girl
+        image : images/portfolio/Art/image-1.png
+        tags : ["Robot", "Characters", "Art", "Furry"]
+        content : 
+        link : ""
+
+      # portfolio item loop
+      - name : Robot Cat
+        image : images/portfolio/Art/image-0.png
+        tags : ["Cat", "Robot"]
+        content : 
+        link : ""
+
+
+    
+    - name : 3D Art
+      text_color : ""
+      bg_color : "#a521c1"
+      portfolio_items:  
+    
+        # portfolio item loop
+      - name : Campfire 1 
+        image : images/portfolio/Godot/Godot-001.png
+        tags : ["Game", "Godot", "Development", "3D"]
+        content : Campfire scene made in Godot.
+        link : "#"
+        
+      # portfolio item loop
+      - name : Campfire 2
+        image : images/portfolio/Godot/Godot-003.png
+        tags : ["Game", "Godot", "Development", "3D"]
+        content : Campfire scene made in Godot.
+        link : "#"
+
+    - name : Other
+      text_color : ""
+      bg_color : "#8a2be2"
+      portfolio_items:
+
+      # portfolio item loop
+      - name : Arcade Machine
+        image : images/portfolio/Other/20200616_125851.jpg
+        tags : ["development"]
+        content : My DIY arcade machine.
+        link : "#"
+        
+#      # portfolio item loop
+#      - name : 
+#        image : 
+#        image_thumb : 
+#        tags : ["", ""]
+#        content : 
+#        link : ""
