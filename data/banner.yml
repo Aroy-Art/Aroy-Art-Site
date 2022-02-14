@@ -1,0 +1,12 @@
+banner:
+  enable : true
+  bg_image_webp : "/images/header-small.jpg"
+  bg_image : "/images/header-small.jpg"
+  icon : ""
+  title : "Aroy"
+  content: "I am a furry programmer and artist."
+  
+  button:
+    enable : true
+    label : "Explore"
+    link : "#navigation"
