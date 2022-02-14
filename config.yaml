@@ -1,0 +1,191 @@
+###################### Hugo configuration #######################
+baseURL: ""
+languageCode: en-gb
+title: Aroy Art
+theme: BioTech
+favicon: img/favicon.png
+
+# Add an S on the end of titles
+pluralizeListTitles: False
+
+# Enable inline shortcodes in blog posts
+enableInlineShortcodes: True
+
+# Robot.txt file
+enableRobotsTXT: True
+#################################################################
+
+
+##################### Default Parameters ########################
+params:
+    # Site character set
+    charset: utf-8
+
+    # Theme color for Android browsers and Vivaldi
+    themeColor: '#ff00d4'
+
+    # Site Logo
+    logo: /img/Furry-Aroy-Logo-2.1.png
+
+    author: Aroy
+    description: I am a furry artist and programmer.
+    copyright: Copyright &copy; 2018-2022 - Design &amp; Content by Aroy
+    license: This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+    post_share: True
+    breadcrumbs: False
+    to_top_button: True
+    comments: True
+    
+    # RSS Feed settings
+    RSS:
+        fullContents: True
+        rssLimit: 100
+    
+#    preloader:
+#        enable: false
+#        preloader: /img/avatar-512.png
+    
+    cookies:
+        enable: true
+        expire_days: 7
+#################################################################
+
+
+
+############################ Plugins ############################   
+    plugins:
+      css: # css plugins
+        - link: /plugins/bootstrap/bootstrap.min.css
+        - link: /plugins/nerd-fonts/nerd-fonts-generated.min.css
+        - link: /plugins/magnific-popup/magnific-popup.css
+        - link: /plugins/slick/slick.css
+        - link: https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,500;0,700;1,200;1,500;1,700&display=swap #https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap
+        - link: /plugins/lightbox/lightbox.min.css
+      js: # js plugins 
+        - link: /plugins/bootstrap/bootstrap.bundle.min.js
+        - link: /plugins/jquery/jquery.min.js
+        - link: /plugins/slick/slick.min.js
+        - link: /plugins/magnific-popup/jquery.magnific-popup.min.js
+        - link: /plugins/masonry/masonry.js
+        - link: /plugins/lazy-load/lozad.min.js
+        - link: /plugins/lightbox/lightbox.min.js
+#################################################################
+
+
+######################### Social Icons ##########################
+# Nerd Fonts icon pack : https://www.nerdfonts.com/cheat-sheet
+    social:
+      - icon: nf nf-fa-github_alt
+        link: https://github.com/Aroy-Art
+      - icon: nf nf-fa-twitter
+        link: https://twitter.com/AroyArt
+      - icon: nf nf-fa-reddit_alien
+        link: https://www.reddit.com/user/Aroy-Art/
+      - icon: nf nf-fa-instagram
+        link: https://www.instagram.com/aroy_art22/
+    
+    sketchfab:
+        enable: true
+        text: I am also on
+        img: /images/logos/social-logos/sketchfab-logo-text.png
+        link: https://sketchfab.com/Aroy-Art
+    
+    utteranc:
+        enable: true
+        repo: Aroy-Art/Aroy-Art-Site-Comments
+        issue_term: pathname
+        label: Comment
+        theme: dark-blue
+#################################################################
+
+
+########################### Markup ##############################
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      autoHeadingID: true
+      autoHeadingIDType: github
+      attribute:
+        block: false
+        title: true
+    renderer:
+      hardWraps: false
+      unsafe: false
+      xhtml: false
+  highlight:
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: false
+    style: fruity
+    tabWidth: 4
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
+#################################################################
+
+
+############################ Outputs ############################
+outputs:
+    home:
+      - HTML
+      - RSS
+#################################################################
+
+
+######################## Navigation bar #########################
+menu:
+  main:
+    - name: Blog
+      pre: ""
+      url: blog
+      weight: 1
+    - name: Portfolio
+      pre: ""
+      url: portfolio
+      weight: 2
+    - name: About Me
+      pre: ""
+      url: about
+      weight: 3
+    - name: Contact
+      pre: '#'
+      url: contact
+      weight: 4
+  more:
+    - name: Archive
+      pre: ""
+      url: archive
+      weight: 3
+    - name: Link Tree
+      pre: ""
+      url: link_tree
+      weight: 1
+#################################################################
+
+
+###################### Language Settings ########################
+Language:
+  en:
+    languageName: EN
+    languageCode: en-gb
+    contentDir: content
+    weight: 1
+    home: Home
+    copyright: Copyright &copy; 2022
+#################################################################
