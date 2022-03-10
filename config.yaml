@@ -24,6 +24,9 @@ params:
     # Theme color for Android browsers and Vivaldi
     themeColor: '#ff00d4'
 
+    # Site Favicon in tabbar in browsers. (Path inside static folder)
+    favicon: favicon.png
+
     # Site Logo
     logo: /img/Furry-Aroy-Logo-2.1.png
 
