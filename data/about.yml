@@ -1,0 +1,28 @@
+about:
+
+  title: "About Me"
+  subtitle: "I am a furry artist and programmer."
+
+  sections:
+    
+    - title: Who am I
+      subtitle: I am a self-taught programmer and artist who lives in northern Sweden, and I do a lot of hardware work as well.
+      content: >-
+        I have a keen eye for detail and this comes in handy when working with electronics, 
+        imaging, programming and game design. The software I commonly work with is Godot Engine, 
+        Blender and Krita. In programming I am most familiar with Godot’s GDscript but I am 
+        familiar with Python, Html, CSS and JavaScript as well. My dream is to one day work 
+        with game design, level design or something similar.
+      image: images/portfolio/Art/image-2.png
+      align: left
+    
+    - title: 
+      subtitle: I am Levi and I am mostly going under the name Aroy.
+      content: >-
+        Ever since I was a kid I have been interested in technology and I took many devices apart. 
+        When I was 11 years old I took apart a computer and put it together again. Since then 
+        I have built a lot of computers and I have helped a lot of people with their computers 
+        and other electronics. For a while I was an active writer on a German Linux wiki. 
+        I can speak German, Swedish and English.
+      image: images/portfolio/Art/eyes1e-outline.png
+      align: right

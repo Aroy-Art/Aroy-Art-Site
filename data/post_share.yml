@@ -1,0 +1,15 @@
+# Disable or enable individual sharing buttons
+post_share:
+  facebook: False
+  twitter: True
+  tumblr: False
+  email: True
+  pinterest: False
+  linkedin: False
+  reddit: True
+  xing: False
+  whatsapp: True
+  hackernews: False
+  vk: False
+  telegram: True
+  
