@@ -3,7 +3,6 @@ baseURL: ""
 languageCode: en-gb
 title: Aroy Art
 theme: BioTech
-favicon: img/favicon.png
 
 # Add an S on the end of titles
 pluralizeListTitles: False
@@ -18,7 +17,7 @@ enableRobotsTXT: True
 
 ##################### Default Parameters ########################
 params:
-    # Site character set
+    # Site html character set
     charset: utf-8
 
     # Theme color for Android browsers and Vivaldi
@@ -39,6 +38,9 @@ params:
     to_top_button: True
     comments: True
     
+    # Set how to format the date, eg; "2006-01-02", "Monday, Jan 2, 2006"
+    dateFormat : "2006-01-02"
+
     # RSS Feed settings
     RSS:
         fullContents: True
@@ -57,21 +59,21 @@ params:
 
 ############################ Plugins ############################   
     plugins:
-      css: # css plugins
-        - link: /plugins/bootstrap/bootstrap.min.css
-        - link: /plugins/nerd-fonts/nerd-fonts-generated.min.css
-        - link: /plugins/magnific-popup/magnific-popup.css
-        - link: /plugins/slick/slick.css
-        - link: https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,500;0,700;1,200;1,500;1,700&display=swap #https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap
-        - link: /plugins/lightbox/lightbox.min.css
-      js: # js plugins 
-        - link: /plugins/bootstrap/bootstrap.bundle.min.js
-        - link: /plugins/jquery/jquery.min.js
-        - link: /plugins/slick/slick.min.js
-        - link: /plugins/magnific-popup/jquery.magnific-popup.min.js
-        - link: /plugins/masonry/masonry.js
-        - link: /plugins/lazy-load/lozad.min.js
-        - link: /plugins/lightbox/lightbox.min.js
+        css: # css plugins
+            - link: /plugins/bootstrap/bootstrap.min.css
+            - link: /plugins/nerd-fonts/nerd-fonts-generated.min.css
+            - link: /plugins/magnific-popup/magnific-popup.css
+            - link: /plugins/slick/slick.css
+            - link: https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,500;0,700;1,200;1,500;1,700&display=swap #https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap
+            - link: /plugins/lightbox/lightbox.min.css
+        js: # js plugins 
+            - link: /plugins/bootstrap/bootstrap.bundle.min.js
+            - link: /plugins/jquery/jquery.min.js
+            - link: /plugins/slick/slick.min.js
+            - link: /plugins/magnific-popup/jquery.magnific-popup.min.js
+            - link: /plugins/masonry/masonry.js
+            - link: /plugins/lazy-load/lozad.min.js
+            - link: /plugins/lightbox/lightbox.min.js
 #################################################################
 
 
@@ -104,42 +106,42 @@ params:
 
 ########################### Markup ##############################
 markup:
-  defaultMarkdownHandler: goldmark
-  goldmark:
-    extensions:
-      definitionList: true
-      footnote: true
-      linkify: true
-      strikethrough: true
-      table: true
-      taskList: true
-      typographer: true
-    parser:
-      autoHeadingID: true
-      autoHeadingIDType: github
-      attribute:
-        block: false
-        title: true
-    renderer:
-      hardWraps: false
-      unsafe: false
-      xhtml: false
-  highlight:
-    anchorLineNos: true
-    codeFences: true
-    guessSyntax: false
-    hl_Lines: ""
-    lineAnchors: ""
-    lineNoStart: 1
-    lineNos: false
-    lineNumbersInTable: true
-    noClasses: false
-    style: fruity
-    tabWidth: 4
-  tableOfContents:
-    endLevel: 3
-    ordered: false
-    startLevel: 2
+    defaultMarkdownHandler: goldmark
+    goldmark:
+        extensions:
+            definitionList: true
+            footnote: true
+            linkify: true
+            strikethrough: true
+            table: true
+            taskList: true
+            typographer: true
+        parser:
+            autoHeadingID: true
+            autoHeadingIDType: github
+            attribute:
+                block: false
+                title: true
+        renderer:
+            hardWraps: false
+            unsafe: false
+            xhtml: false
+    highlight:
+        anchorLineNos: true
+        codeFences: true
+        guessSyntax: true
+        hl_Lines: ""
+        lineAnchors: ""
+        lineNoStart: 1
+        lineNos: false
+        lineNumbersInTable: true
+        noClasses: false
+        style: fruity
+        tabWidth: 4
+    tableOfContents:
+        endLevel: 3
+        ordered: false
+        startLevel: 2
 #################################################################
 
 
@@ -153,42 +155,42 @@ outputs:
 
 ######################## Navigation bar #########################
 menu:
-  main:
-    - name: Blog
-      pre: ""
-      url: blog
-      weight: 1
-    - name: Portfolio
-      pre: ""
-      url: portfolio
-      weight: 2
-    - name: About Me
-      pre: ""
-      url: about
-      weight: 3
-    - name: Contact
-      pre: '#'
-      url: contact
-      weight: 4
-  more:
-    - name: Archive
-      pre: ""
-      url: archive
-      weight: 3
-    - name: Link Tree
-      pre: ""
-      url: link_tree
-      weight: 1
+    main:
+        - name: Blog
+          pre: ""
+          url: blog
+          weight: 1
+        - name: Portfolio
+          pre: ""
+          url: portfolio
+          weight: 2
+        - name: About Me
+          pre: ""
+          url: about
+          weight: 3
+        - name: Contact
+          pre: '#'
+          url: contact
+          weight: 4
+#    more:
+#        - name: Archive
+#          pre: ""
+#          url: archive
+#          weight: 3
+#        - name: Link Tree
+#          pre: ""
+#          url: link_tree
+#          weight: 1
 #################################################################
 
 
 ###################### Language Settings ########################
 Language:
-  en:
-    languageName: EN
-    languageCode: en-gb
-    contentDir: content
-    weight: 1
-    home: Home
-    copyright: Copyright &copy; 2022
+    en:
+        languageName: EN
+        languageCode: en-gb
+        contentDir: content
+        weight: 1
+        home: Home
+        copyright: Copyright &copy; 2022
 #################################################################
