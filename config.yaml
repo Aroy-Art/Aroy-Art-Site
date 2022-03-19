@@ -1,5 +1,5 @@
 ###################### Hugo configuration #######################
-baseURL: ""
+baseURL: "/"
 languageCode: en-gb
 title: Aroy Art
 theme: BioTech
