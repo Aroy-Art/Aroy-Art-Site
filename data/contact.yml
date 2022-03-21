@@ -2,7 +2,7 @@
 contact:
     enable : true
     title : Contact Me
-    content : Drop Me a Message #If you have questions fel free to contact me.
+    content : Drop Me a Message 📨️ #If you have questions fel free to contact me.
 
     # Contact form
     contact_form:
