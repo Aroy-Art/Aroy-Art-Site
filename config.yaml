@@ -56,7 +56,6 @@ params:
 #################################################################
 
 
-
 ############################ Plugins ############################   
     plugins:
         css: # css plugins
@@ -68,7 +67,7 @@ params:
             - link: /plugins/lightbox/lightbox.min.css
         js: # js plugins 
             - link: /plugins/bootstrap/bootstrap.bundle.min.js
-            - link: /plugins/jquery/jquery.min.js
+            - link: /plugins/jquery/jquery-3.6.0.min.js
             - link: /plugins/slick/slick.min.js
             - link: /plugins/magnific-popup/jquery.magnific-popup.min.js
             - link: /plugins/masonry/masonry.js
