@@ -94,6 +94,12 @@ params:
         img: /images/logos/social-logos/sketchfab-logo-text.png
         link: https://sketchfab.com/Aroy-Art
     
+    itchio:
+        enable: true
+        text: Find my projects on
+        img: /images/logos/social-logos/itchio-logo-white.svg
+        link: https://aroy.itch.io
+
     utteranc:
         enable: true
         repo: Aroy-Art/Aroy-Art-Site-Comments
