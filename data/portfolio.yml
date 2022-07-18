@@ -10,11 +10,19 @@ portfolio:
       bg_color   : "#57cbcc"
       portfolio_items:
 
+      - name    : Dragon
+        image   : images/portfolio/Art/Dragon-02-WIP-03.png
+        tags    : ["Krita"]
+        content :
+        link    : ""
+        slideshow : true
+
       - name    : Cyborg Cat
         image   : images/portfolio/Art/Skiss-01-V21.png 
         tags    : ["Krita", "2D", "Cyborg"]
         content :
         link    : ""
+        slideshow : true
 
       # portfolio item loop
       - name    : Aroy icon version 2
@@ -22,6 +30,7 @@ portfolio:
         tags    : [""]
         content : 
         link    : ""
+        slideshow : true
 
       # portfolio item loop
       - name    : Aroy icon version 2
@@ -29,6 +38,7 @@ portfolio:
         tags    : [""]
         content : 
         link    : ""
+        slideshow : true
 
       # portfolio item loop
       - name    : Aroy Character version 1
@@ -36,6 +46,7 @@ portfolio:
         tags    : ["Furry", "Characters"]
         content : 
         link    : ""
+        slideshow : true
 
       # portfolio item loop
       - name    : Furry Robot Girl
@@ -43,6 +54,7 @@ portfolio:
         tags    : ["Robot", "Characters", "Art", "Furry"]
         content : 
         link    : ""
+        slideshow : true
 
       # portfolio item loop
       - name    : Robot Cat
@@ -50,12 +62,14 @@ portfolio:
         tags    : ["Cat", "Robot"]
         content : 
         link    : ""
+        slideshow : true
 
       - name    : Black Eye
         image   : images/portfolio/Art/eyes1e-outline.png
         tags    : ["Krita"]
         content :
         link    : ""
+        slideshow : true
 
     
     - name       : 3D Art
@@ -69,6 +83,7 @@ portfolio:
         tags    : ["Game", "Godot", "Development", "3D"]
         content : Campfire scene made in Godot.
         link    : "#"
+        slideshow : false
         
       # portfolio item loop
       - name    : Campfire 2
@@ -76,6 +91,7 @@ portfolio:
         tags    : ["Game", "Godot", "Development", "3D"]
         content : Campfire scene made in Godot.
         link    : "#"
+        slideshow : false
 
 
     - name       : Other
@@ -89,6 +105,7 @@ portfolio:
         tags    : ["development"]
         content : My DIY arcade machine.
         link    : "#"
+        slideshow : false
         
 #      # portfolio item loop
 #      - name    : 
