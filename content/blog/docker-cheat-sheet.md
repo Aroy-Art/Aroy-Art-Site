@@ -20,7 +20,7 @@ slug: docker-cheat-sheet
 
 ### List images
 
-```sh
+```Shell
 docker images [OPTIONS] [REPOSITORY[:TAG]]
 ```
 
@@ -39,7 +39,7 @@ docker images [OPTIONS] [REPOSITORY[:TAG]]
 
 ### Remove one or more containers
 
-```sh
+```Shell
 docker rm [OPTIONS] CONTAINER [CONTAINER...]
 ```
 
@@ -55,7 +55,7 @@ docker rm [OPTIONS] CONTAINER [CONTAINER...]
 
 ### Stop one or more running containers
 
-```sh
+```Shell
 docker stop [OPTIONS] CONTAINER [CONTAINER...]
 ```
 
