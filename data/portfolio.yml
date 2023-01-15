@@ -4,12 +4,14 @@ portfolio:
   title : My Works
   image_loaded_plugin : "/plugins/image-loaded/imagesloaded.pkgd.min.js"
   portfolio_categories:
-    
+
+    # Portfolio Category   
     - name       : 2D Art
       text_color : "#a521c1"
       bg_color   : "#57cbcc"
       portfolio_items:
 
+      # Portfolio item
       - name    : Dragon
         image   : images/portfolio/Art/Dragon-02-WIP-03.png
         tags    : ["Krita"]
@@ -79,7 +81,7 @@ portfolio:
     
         # portfolio item loop
       - name    : Campfire 1 
-        image   : images/portfolio/Godot/Godot-001.png
+        image   : images/portfolio/3D/Godot-001.png
         tags    : ["Game", "Godot", "Development", "3D"]
         content : Campfire scene made in Godot.
         link    : "#"
@@ -87,7 +89,7 @@ portfolio:
         
       # portfolio item loop
       - name    : Campfire 2
-        image   : images/portfolio/Godot/Godot-003.png
+        image   : images/portfolio/3D/Godot-003.png
         tags    : ["Game", "Godot", "Development", "3D"]
         content : Campfire scene made in Godot.
         link    : "#"
