@@ -26,14 +26,14 @@ docker images [OPTIONS] [REPOSITORY[:TAG]]
 
 #### Options
 
-| Name, shorthand | Default | Description                                         |
-| :-------------- | :------:| --------------------------------------------------- |
-| `--all , -a`    |         | Show all images (default hides intermediate images) |
-| `--digests`     |         | Show digests                                        |
-| `--filter , -f` |         | Filter output based on conditions provided          |
-| `--format`      |         | Pretty-print images using a Go template             |
-| `--no-trunc`    |         | Don’t truncate output                               |
-| `--quiet , -q`  |         | Only show numeric IDs                               |
+| Name, shorthand | Default  | Description                                         |
+| :-------------- | :------: | --------------------------------------------------- |
+| `--all, -a`     |          | Show all images (default hides intermediate images) | 
+| `--digests`     |          | Show digests                                        | 
+| `--filter, -f`  |          | Filter output based on conditions provided          |
+| `--format`      |          | Pretty-print images using a Go template             |
+| `--no-trunc`    |          | Don’t truncate output                               |
+| `--quiet, -q`   |          | Only show numeric IDs                               |
 
 ---
 
@@ -46,10 +46,10 @@ docker rm [OPTIONS] CONTAINER [CONTAINER...]
 #### Options
 
 | Name, shorthand | Default | Description                                             |
-|:----------------|:-------:| ------------------------------------------------------- |
-|`--force , -f`   |         | Force the removal of a running container (uses SIGKILL) |
-|`--link , -l`    |         | Remove the specified link                               |
-|`--volumes , -v` |         | Remove anonymous volumes associated with the container  |
+|:----------------|:-------:| ------------------------------------------------------- | 
+|`--force, -f`    |         | Force the removal of a running container (uses SIGKILL) |
+|`--link, -l`     |         | Remove the specified link                               |
+|`--volumes, -v`  |         | Remove anonymous volumes associated with the container  |
 
 ---
 
