@@ -2,9 +2,10 @@
 title: Docker Cheat Sheet
 description: This is my list of use full Docker commands.
 date: 2020-12-02T00:00:00.000Z
-lastmod: '2021-12-31T16:03:40.561Z'
+lastmod: 2023-01-15T17:01:45.211Z
+
 image: /images/blog/Image-Docker-Command-Cheat-Sheet.png
-description: This is my Docker commands cheat sheet.
+
 tags:
   - Cheat-Sheet
   - Docker
@@ -62,5 +63,67 @@ docker stop [OPTIONS] CONTAINER [CONTAINER...]
 #### Options
 
 | Name, shorthand | Default | Description                                 |
-|:----------------|:-------:| ------------------------------------------- |
-|`--time , -t`    | 10      | Seconds to wait for stop before killing it. |
+|:----------------|:-------:| ------------------------------------------- | 
+|`--time, -t`     | 10      | Seconds to wait for stop before killing it. |
+
+## How to cleanup (unused) resources
+
+---
+
+Once in a while, you may need to cleanup resources (containers, volumes, images, networks) ...
+
+If you use a Docker version newer than > 1.13 you can use Dockers builtin cleanup tool `purge`.
+
+### The new way (Docker > 1.13)
+
+#### Network
+
+To purge the networks ([Docker Docs](https://docs.docker.com/engine/reference/commandline/network_prune))
+
+```Shell
+docker network prune
+```
+
+#### Containers, Volumes, Images
+
+And to purge the docker system ([Docker Docs](https://docs.docker.com/engine/reference/commandline/system_prune))
+
+```Shell
+docker system prune
+```
+
+### The old way (Docker < 1.13)
+
+#### Delete Volumes
+
+{{< alert theme="info" >}} // see: https://github.com/chadoe/docker-cleanup-volumes {{< /alert >}}
+
+```Shell
+docker volume rm $(docker volume ls -qf dangling=true)
+```
+
+or
+
+```Shell
+docker volume ls -qf dangling=true | xargs -r docker volume rm
+```
+
+#### Delete Networks
+
+```Shell
+docker network ls
+```
+
+```Shell
+docker network ls | grep "bridge"
+```
+
+```Shell
+docker network rm $(docker network ls | grep "bridge" | awk '/ / { print $1 }')
+```
+
+or
+
+```Shell
+docker network ls | awk '$3 == "bridge" && $2 != "bridge" { print $1 }'
+```
