@@ -6,8 +6,12 @@ lastmod: '2021-12-31T16:03:40.561Z'
 image: /images/blog/Image-Docker-Command-Cheat-Sheet.png
 description: This is my Docker commands cheat sheet.
 tags:
-    - docker
-    - cheat-sheet
+  - Cheat-Sheet
+  - Docker
+  - Command-Line
+  - Linux
+
+slug: docker-cheat-sheet
 ---
 
 # A list of docker commands
