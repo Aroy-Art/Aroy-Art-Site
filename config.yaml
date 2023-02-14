@@ -2,7 +2,7 @@
 baseURL: "/"
 languageCode: en-gb
 title: Aroy Art
-theme: BioTech
+theme: Rinkusu
 
 # Add an S on the end of titles
 pluralizeListTitles: False
