@@ -38,6 +38,9 @@ params:
     to_top_button: True
     comments: True
     
+    # Set to true to fix some problems if built wih Netlify´s build system
+    onNetlify: true
+
     # Set how to format the date, eg; "2006-01-02", "Monday, Jan 2, 2006"
     dateFormat : "2006-01-02"
 
