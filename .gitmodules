@@ -4,3 +4,6 @@
 [submodule "themes/BioTech"]
 	path = themes/BioTech
 	url = https://github.com/Aroy-Art/BioTech.git
+[submodule "themes/Rinkusu"]
+	path = themes/Rinkusu
+	url = https://github.com/Aroy-Art/Rinkusu.git
