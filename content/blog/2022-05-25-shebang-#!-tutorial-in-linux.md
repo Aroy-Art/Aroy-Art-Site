@@ -39,6 +39,7 @@ The shebang has the following syntax where the interpreter executable file path 
 
 |Type / Language | Syntax             | 
 |----------------|--------------------|
+| Sh             | #!/bin/sh          |
 | Bash           | #!/bin/bash        |
 | ZSH            | #!/bin/zsh         |
 | Python 3       | #!/bin/python3     |
