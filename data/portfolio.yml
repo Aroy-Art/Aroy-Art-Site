@@ -74,6 +74,20 @@ portfolio:
         slideshow : true
 
     
+    - name       : Sketches
+      text_color : ""
+      bg_color   : "#8a2be2"
+      portfolio_items:
+
+      # portfolio item loop
+      - name    : Female Kitty
+        image   : images/portfolio/Sketch/Sketch-003.png
+        tags    : ["Krita"]
+        content : 
+        link    : "#"
+        slideshow : false
+
+
     - name       : 3D Art
       text_color : ""
       bg_color   : "#a521c1"
