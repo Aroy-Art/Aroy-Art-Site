@@ -82,14 +82,18 @@ params:
 ######################### Social Icons ##########################
 # Nerd Fonts icon pack : https://www.nerdfonts.com/cheat-sheet
     social:
+      - icon: nf nf-dev-git_branch
+        link: https://git.aroy-art.com
       - icon: nf nf-fa-github_alt
         link: https://github.com/Aroy-Art
-      - icon: nf nf-fa-twitter
-        link: https://twitter.com/AroyArt
-      - icon: nf nf-fa-reddit_alien
-        link: https://www.reddit.com/user/Aroy-Art/
-      - icon: nf nf-fa-instagram
-        link: https://www.instagram.com/aroy_art22/
+      - icon: nf nf-md-matrix
+        link: https://matrix.to/#/@aroy:matrix.aroy-art.com
+      #- icon: nf nf-fa-twitter
+      #  link: https://twitter.com/AroyArt
+      #- icon: nf nf-fa-reddit_alien
+      #  link: https://www.reddit.com/user/Aroy-Art/
+      #- icon: nf nf-fa-instagram
+      #  link: https://www.instagram.com/aroy_art22/
     
     sketchfab:
         enable: true
@@ -99,7 +103,7 @@ params:
     
     itchio:
         enable: true
-        text: Find my projects on
+        text: Find my Game Jam's on
         img: /images/logos/social-logos/itchio-logo-white.svg
         link: https://aroy.itch.io
 
