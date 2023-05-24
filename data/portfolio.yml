@@ -104,7 +104,7 @@ portfolio:
       # portfolio item loop
       - name    : Arcade Machine
         image   : images/portfolio/Other/20200616_125851.jpg
-        tags    : ["development"]
+        tags    : ["Retro"]
         content : My DIY arcade machine.
         link    : "#"
         slideshow : false
