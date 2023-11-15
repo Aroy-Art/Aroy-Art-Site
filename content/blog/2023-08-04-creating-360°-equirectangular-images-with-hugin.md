@@ -1,7 +1,7 @@
 ---
 title: Creating 360° Equirectangular Images with Hugin
 date: 2023-08-04T11:58:40.938Z
-lastmod: 2023-11-15T20:09:34.937Z
+lastmod: 2023-11-15T20:37:52.008Z
 image: /images/blog/2023-08-04-creating-360°-equirectangular-images-with-hugin/ExampleEqui.jpg
 description: Creating equirectangular images from 6 separate cube map images using Hugin
 tags:
