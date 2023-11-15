@@ -103,7 +103,7 @@ params:
     
     itchio:
         enable: true
-        text: Find my Game Jam's on
+        text: Find my Game Jams on
         img: /images/logos/social-logos/itchio-logo-white.svg
         link: https://aroy.itch.io
 
