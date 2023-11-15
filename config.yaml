@@ -1,8 +1,8 @@
 ###################### Hugo configuration #######################
-baseURL: ""
+baseURL: "/"
 languageCode: en-gb
 title: Aroy Art
-theme: BioTech
+theme: Rinkusu
 
 # Add an S on the end of titles
 pluralizeListTitles: False
@@ -31,13 +31,16 @@ params:
 
     author: Aroy
     description: I am a furry artist and programmer.
-    copyright: Copyright &copy; 2022 - Design &amp; Content by Aroy
+    copyright: Copyright &copy; 2023 - Design &amp; Content by Aroy
     license: This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
     post_share: True
-    breadcrumbs: False
+    breadcrumbs: true
     to_top_button: True
     comments: True
     
+    # Set to true to fix some problems if built wih Netlify´s build system
+    onNetlify: false
+
     # Set how to format the date, eg; "2006-01-02", "Monday, Jan 2, 2006"
     dateFormat : "2006-01-02"
 
@@ -56,7 +59,6 @@ params:
 #################################################################
 
 
-
 ############################ Plugins ############################   
     plugins:
         css: # css plugins
@@ -64,11 +66,11 @@ params:
             - link: /plugins/nerd-fonts/nerd-fonts-generated.min.css
             - link: /plugins/magnific-popup/magnific-popup.css
             - link: /plugins/slick/slick.css
-            - link: https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,500;0,700;1,200;1,500;1,700&display=swap #https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap
+            - link: https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap #https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap
             - link: /plugins/lightbox/lightbox.min.css
         js: # js plugins 
             - link: /plugins/bootstrap/bootstrap.bundle.min.js
-            - link: /plugins/jquery/jquery.min.js
+            - link: /plugins/jquery/jquery-3.6.0.min.js
             - link: /plugins/slick/slick.min.js
             - link: /plugins/magnific-popup/jquery.magnific-popup.min.js
             - link: /plugins/masonry/masonry.js
@@ -80,14 +82,18 @@ params:
 ######################### Social Icons ##########################
 # Nerd Fonts icon pack : https://www.nerdfonts.com/cheat-sheet
     social:
+      - icon: nf nf-dev-git_branch
+        link: https://git.aroy-art.com
       - icon: nf nf-fa-github_alt
         link: https://github.com/Aroy-Art
-      - icon: nf nf-fa-twitter
-        link: https://twitter.com/AroyArt
-      - icon: nf nf-fa-reddit_alien
-        link: https://www.reddit.com/user/Aroy-Art/
-      - icon: nf nf-fa-instagram
-        link: https://www.instagram.com/aroy_art22/
+      - icon: nf nf-md-matrix
+        link: https://matrix.to/#/@aroy:matrix.aroy-art.com
+      #- icon: nf nf-fa-twitter
+      #  link: https://twitter.com/AroyArt
+      #- icon: nf nf-fa-reddit_alien
+      #  link: https://www.reddit.com/user/Aroy-Art/
+      #- icon: nf nf-fa-instagram
+      #  link: https://www.instagram.com/aroy_art22/
     
     sketchfab:
         enable: true
@@ -95,6 +101,12 @@ params:
         img: /images/logos/social-logos/sketchfab-logo-text.png
         link: https://sketchfab.com/Aroy-Art
     
+    itchio:
+        enable: true
+        text: Find my Game Jams on
+        img: /images/logos/social-logos/itchio-logo-white.svg
+        link: https://aroy.itch.io
+
     utteranc:
         enable: true
         repo: Aroy-Art/Aroy-Art-Site-Comments
@@ -124,7 +136,7 @@ markup:
                 title: true
         renderer:
             hardWraps: false
-            unsafe: false
+            unsafe: false # Set to "true" if you need to use raw html in blog posts 
             xhtml: false
     highlight:
         anchorLineNos: true
