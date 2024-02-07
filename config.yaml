@@ -55,7 +55,7 @@ params:
     
     cookies:
         enable: true
-        expire_days: 7
+        expire_days: 90
 #################################################################
 
 
