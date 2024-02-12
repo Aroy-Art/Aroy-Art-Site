@@ -2,6 +2,7 @@
 portfolio:
   enable : true
   title : My Works
+  description : This is my portfolio, these images are made in Blender, Krita, Inkscape, Godot Engine and IRL.
   image_loaded_plugin : "/plugins/image-loaded/imagesloaded.pkgd.min.js"
   portfolio_categories:
 
