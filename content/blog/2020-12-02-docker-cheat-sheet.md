@@ -1,18 +1,15 @@
 ---
-title: Docker Cheat Sheet
+title: Docker & Compose Cheat Sheet
 description: This is my list of use full Docker commands.
 date: 2020-12-02T00:00:00.000Z
-lastmod: 2023-01-15T17:01:45.211Z
-
+lastmod: 2024-02-13T21:23:00.829Z
 image: /images/blog/Image-Docker-Command-Cheat-Sheet.png
-
 tags:
   - Cheat-Sheet
-  - Docker
   - Command-Line
+  - Docker
   - Linux
-
-slug: docker-cheat-sheet
+slug: docker-compose-cheat-sheet
 ---
 
 # A list of docker commands
