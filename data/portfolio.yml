@@ -1,0 +1,132 @@
+#################################### portfolio ###############################
+portfolio:
+  enable : true
+  title : My Works
+  description : This is my portfolio, these images are made in Blender, Krita, Inkscape, Godot Engine and IRL.
+  image_loaded_plugin : "/plugins/image-loaded/imagesloaded.pkgd.min.js"
+  portfolio_categories:
+
+    # Portfolio Category   
+    - name       : 2D Art
+      text_color : "#a521c1"
+      bg_color   : "#57cbcc"
+      portfolio_items:
+
+      # Portfolio item
+      - name    : Dragon
+        image   : images/portfolio/Art/Dragon-02-WIP-03.png
+        tags    : ["Krita"]
+        content :
+        link    : ""
+        slideshow : true
+
+      - name    : Cyborg Cat
+        image   : images/portfolio/Art/Skiss-01-V21.png 
+        tags    : ["Krita", "2D", "Cyborg"]
+        content :
+        link    : ""
+        slideshow : true
+
+      # portfolio item loop
+      - name    : Aroy icon version 2
+        image   : images/portfolio/Art/image-5.png
+        tags    : [""]
+        content : 
+        link    : ""
+        slideshow : true
+
+      # portfolio item loop
+      - name    : Aroy icon version 2
+        image   : images/portfolio/Art/image-3.png
+        tags    : [""]
+        content : 
+        link    : ""
+        slideshow : true
+
+      # portfolio item loop
+      - name    : Aroy Character version 1
+        image   : images/portfolio/Art/image-2.png
+        tags    : ["Furry", "Characters"]
+        content : 
+        link    : ""
+        slideshow : true
+
+      # portfolio item loop
+      - name    : Furry Robot Girl
+        image   : images/portfolio/Art/image-1.png
+        tags    : ["Robot", "Characters", "Art", "Furry"]
+        content : 
+        link    : ""
+        slideshow : true
+
+      # portfolio item loop
+      - name    : Robot Cat
+        image   : images/portfolio/Art/image-0.png
+        tags    : ["Cat", "Robot"]
+        content : 
+        link    : ""
+        slideshow : true
+
+      - name    : Black Eye
+        image   : images/portfolio/Art/eyes1e-outline.png
+        tags    : ["Krita"]
+        content :
+        link    : ""
+        slideshow : true
+
+    
+    - name       : Sketches
+      text_color : ""
+      bg_color   : "#8a2be2"
+      portfolio_items:
+
+      # portfolio item loop
+      - name    : Female Kitty
+        image   : images/portfolio/Sketch/Sketch-003.png
+        tags    : ["Krita"]
+        content : 
+        link    : "#"
+        slideshow : false
+
+
+    - name       : 3D Art
+      text_color : ""
+      bg_color   : "#a521c1"
+      portfolio_items:  
+    
+        # portfolio item loop
+      - name    : Campfire 1 
+        image   : images/portfolio/3D/Godot-001.png
+        tags    : ["Game", "Godot", "Development", "3D"]
+        content : Campfire scene made in Godot.
+        link    : "#"
+        slideshow : false
+        
+      # portfolio item loop
+      - name    : Campfire 2
+        image   : images/portfolio/3D/Godot-003.png
+        tags    : ["Game", "Godot", "Development", "3D"]
+        content : Campfire scene made in Godot.
+        link    : "#"
+        slideshow : false
+
+
+    - name       : Other
+      text_color : ""
+      bg_color   : "#8a2be2"
+      portfolio_items:
+
+      # portfolio item loop
+      - name    : Arcade Machine
+        image   : images/portfolio/Other/20200616_125851.jpg
+        tags    : ["Retro"]
+        content : My DIY arcade machine.
+        link    : "#"
+        slideshow : false
+        
+#      # portfolio item loop
+#      - name    : 
+#        image   :  
+#        tags    : ["", ""]
+#        content : 
+#        link    : ""
