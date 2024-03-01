@@ -1,7 +1,7 @@
 ---
 title: "WorldEdit Schematics: How to Add, Create & Paste Schematics"
 date: 2023-05-24T15:50:41.394Z
-lastmod: 2024-02-18T15:06:43.140Z
+lastmod: 2024-02-19T17:13:04.445Z
 image: images/blog/how-to-use-schematics/how-to-use-schematics.png
 description: In this guide, you will learn what schematics are and how to use them!
 tags:
@@ -39,7 +39,6 @@ For example, this [Medieval Hub/Lobby](https://www.planetminecraft.com/project/f
 
 You have now successfully added schematics to your server!
 
-
 ## Creating Schematics on Your Server Through WorldEdit
 
 1. To save a schematic, start by building the schematic on your server. This can be anything you'd like to build from a simple house, to a classroom, to towers and dungeons and so much more!
@@ -60,7 +59,6 @@ You have now successfully added schematics to your server!
 For example: `//schem save mcedit EpicTower`
 
 You have now successfully saved your own custom schematic!
-
 
 ## Pasting Schematics on Your Server Through WorldEdit
 
