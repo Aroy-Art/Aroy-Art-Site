@@ -4,7 +4,7 @@ banner:
   bg_image : "/images/header-small.jpg"
   icon : ""
   title : "Aroy"
-  content: "I am a furry programmer and artist."
+  content: "Welcome to the whimsical world of this kitty."
   
   button:
     enable : true
