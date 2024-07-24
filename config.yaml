@@ -136,7 +136,7 @@ markup:
                 title: true
         renderer:
             hardWraps: false
-            unsafe: false # Set to "true" if you need to use raw html in blog posts 
+            unsafe: true # Set to "true" if you need to use raw html in blog posts 
             xhtml: false
     highlight:
         anchorLineNos: true
