@@ -1,7 +1,7 @@
 ---
 title: Cyberpunk-Style Glitch Text Walkthrough
 date: 2024-07-23T18:35:26.560Z
-lastmod: 2024-07-24T20:43:47.560Z
+lastmod: 2024-07-26T17:49:19.234Z
 image: /images/blog/2024-07-23-cyberpunk-style-glitch-text-walkthrough/Peek 2024-07-24 22-34.gif
 description: Discover how to create a cyberpunk-style glitch text effect using pure CSS. This guide covers text layering, clip-paths, and animations for a dynamic, futuristic look. Dive in and start glitching!
 tags:
@@ -574,7 +574,7 @@ Create multiple layers to play with. For this example I'll use `::before` & `::a
 
 ## Paths
 
-Build out a set of clip-paths (I wrote up a <a href="/tools/randomly-generated-clip-path/">generator util</a> for this project)
+Build out a set of clip-paths (I wrote up a [generator util](/tools/randomly-generated-clip-path/) for this project)
 
 **Example Path:**
 
