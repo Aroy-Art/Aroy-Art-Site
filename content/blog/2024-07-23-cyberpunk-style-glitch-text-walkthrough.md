@@ -27,6 +27,7 @@ slug: cyberpunk-style-glitch-text-walkthrough
 
 .post-single-content .demo {
     height: 100px;
+    margin: 0 20px 0 20px;
     background: #fff;
 }
 
