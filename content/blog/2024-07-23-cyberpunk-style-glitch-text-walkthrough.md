@@ -506,16 +506,7 @@ slug: cyberpunk-style-glitch-text-walkthrough
 }
 </style>
 
-# The Effect
-
-{{< details "The Effect (What we are going to make)">}}
-<div class="hero-container">
-    <div class="environment"></div>
-    <h2 class="hero glitch layers" data-text="近設計"><span>近設計</span></h2>
-</div>
-{{< /details >}}
-
-## Walkthrough
+# Walkthrough
 
 This came out of a 24-hour work sprint to replicate some sophisticated video VFX and to make it more flexible.
 
@@ -533,6 +524,17 @@ There's a lot of pieces that go into an effect like this. What follows is an out
 {{< toc >}}
 
 ---
+
+## The Effect
+
+This is how the complete effect looks like
+
+{{< details "The Effect (What we are going to make)">}}
+<div class="hero-container">
+    <div class="environment"></div>
+    <h2 class="hero glitch layers" data-text="近設計"><span>近設計</span></h2>
+</div>
+{{< /details >}}
 
 ## Layers
 
