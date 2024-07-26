@@ -517,7 +517,7 @@ slug: cyberpunk-style-glitch-text-walkthrough
 
 ## Walkthrough
 
-This came out of a 24-hour work sprint to replicate some sophisticated video VFX in to make it more flexible.
+This came out of a 24-hour work sprint to replicate some sophisticated video VFX and to make it more flexible.
 
 There's a lot of pieces that go into an effect like this. What follows is an outline of the animations and VFX concepts, all in pure css :)
 
