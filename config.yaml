@@ -173,15 +173,15 @@ menu:
     main:
         - name: Blog
           pre: ""
-          url: blog
+          url: blog/
           weight: 1
         - name: Portfolio
           pre: ""
-          url: portfolio
+          url: portfolio/
           weight: 2
         - name: About Me
           pre: ""
-          url: about
+          url: about/
           weight: 3
         - name: Contact
           pre: '#'
