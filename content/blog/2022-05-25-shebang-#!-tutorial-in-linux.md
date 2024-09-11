@@ -1,21 +1,15 @@
 ---
 title: "Shebang #! Tutorial In Linux"
 description: ""
-
 date: 2022-05-25T12:50:05.057Z
-lastmod: 2023-01-03T16:39:00.682Z
-
+lastmod: 2024-09-11T21:10:00.957Z
 image: /images/blog/shebang.jpg
-
 draft: false
-
 tags:
   - Linux
   - Cheat-Sheet
-
 slug: shebang-tutorial-linux
 ---
-# Shebang #! Tutorial In Linux
 
 In computing and Linux the shebang is a character sequence that consists of `#` and `!`. Simply the shebang is expressed as `#!`. The shebang is also called sha-bang, hashbang, pound-bang, and hash-pling. The shebang is used to specify an interpreter for script files. Linux is popular with its script files and scripting languages like Bash, ZSH, Python, Perl, PHP, etc. The shebang is used to specify the interpreter type and location. When a script file is called the first line contains the shebang with the interpreter path.
 
