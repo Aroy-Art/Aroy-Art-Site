@@ -12,6 +12,9 @@ enableInlineShortcodes: True
 
 # Robot.txt file
 enableRobotsTXT: True
+
+# Summary length
+summaryLength: 24
 #################################################################
 
 
