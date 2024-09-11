@@ -1,7 +1,7 @@
 ---
 title: Creating 360° Equirectangular Images with Hugin
 date: 2023-08-04T11:58:40.938Z
-lastmod: 2023-11-15T20:37:52.008Z
+lastmod: 2024-09-11T17:46:39.391Z
 image: /images/blog/2023-08-04-creating-360°-equirectangular-images-with-hugin/ExampleEqui.jpg
 description: Creating equirectangular images from 6 separate cube map images using Hugin
 tags:
@@ -10,8 +10,6 @@ tags:
 draft: false
 slug: creating-360-equirectangular-images-hugin
 ---
-
-# Creating 360° Equirectangular Images with Hugin
 
 We can use [Hugin](https://hugin.sourceforge.io/) to create an equirectangular image from a six-image cube. For ease of keeping track of things, it is recommended that you name the files back, front, left, right, down, and up.
 
