@@ -1,7 +1,7 @@
 ---
-title: Cyberpunk-Style Glitch Text Walkthrough
+title: Cyberpunk - Style Glitch Text Walkthrough
 date: 2024-07-23T18:35:26.560Z
-lastmod: 2024-07-26T17:49:19.234Z
+lastmod: 2024-09-11T20:48:16.374Z
 image: /images/blog/2024-07-23-cyberpunk-style-glitch-text-walkthrough/Peek 2024-07-24 22-34.gif
 description: Discover how to create a cyberpunk-style glitch text effect using pure CSS. This guide covers text layering, clip-paths, and animations for a dynamic, futuristic look. Dive in and start glitching!
 tags:
