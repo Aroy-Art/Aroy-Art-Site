@@ -12,6 +12,23 @@ draft: false
 slug: cyberpunk-style-glitch-text-walkthrough
 ---
 
+This came out of a 24-hour work sprint to replicate some sophisticated video VFX and to make it more flexible.
+
+There's a lot of pieces that go into an effect like this. What follows is an outline of the animations and VFX concepts, all in pure css :)
+
+**Core principles:**
+
+* Keep the text legible most of the time
+* Don't throw too many glitches in per second. Give it space to breathe
+* Whitespace never hurt anyone
+* Blurs & glows lend a feeling of realism in dark environments (queue neon)
+
+---
+
+{{< toc >}}
+
+---
+
 <style>
 .post-single-content .hero {
     font-size: clamp(40px, 10vw, 100px);
@@ -505,25 +522,6 @@ slug: cyberpunk-style-glitch-text-walkthrough
     background-size: cover;
 }
 </style>
-
-# Walkthrough
-
-This came out of a 24-hour work sprint to replicate some sophisticated video VFX and to make it more flexible.
-
-There's a lot of pieces that go into an effect like this. What follows is an outline of the animations and VFX concepts, all in pure css :)
-
-**Core principles:**
-
-* Keep the text legible most of the time
-* Don't throw too many glitches in per second. Give it space to breathe
-* Whitespace never hurt anyone
-* Blurs & glows lend a feeling of realism in dark environments (queue neon)
-
----
-
-{{< toc >}}
-
----
 
 ## The Effect
 
