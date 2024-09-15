@@ -52,6 +52,7 @@ params:
         fullContents: True
         rssLimit: 100
     
+    # Cookie-Box settings
     cookies:
         enable: true
         expire_days: 90
