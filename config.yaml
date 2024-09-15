@@ -52,10 +52,6 @@ params:
         fullContents: True
         rssLimit: 100
     
-#    preloader:
-#        enable: false
-#        preloader: /img/avatar-512.png
-    
     cookies:
         enable: true
         expire_days: 90
