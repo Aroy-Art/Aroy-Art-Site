@@ -91,6 +91,8 @@ params:
         link: https://github.com/Aroy-Art
       - icon: nf nf-md-matrix
         link: https://matrix.to/#/@aroy:matrix.aroy-art.com
+      - icon: nf nf-md-shark
+        link: https://fedi.aroy-art.com/@aroy
       #- icon: nf nf-fa-twitter
       #  link: https://twitter.com/AroyArt
       #- icon: nf nf-fa-reddit_alien
