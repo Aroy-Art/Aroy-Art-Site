@@ -1,2 +1,12 @@
-/public
-/tmp
+#################
+# -- Folders -- #
+#################
+.vscode/
+public/
+resources/_gen/
+Tmp/
+
+#################
+# --- Files --- #
+#################
+.hugo_build.lock

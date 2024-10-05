@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #output {
+                flex-grow: 2;
+                flex-shrink: 0;
+                height: 80vh;
+                width: 65vw;
+                background: #333;
+              
+                clip-path: var(--path);
+            }
+            #gen-btn {
+                width: 30vw;
+            }
+            #output-field {
+                width: 30vw;
+                height: 80vh;
+            }
+            .container {
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Randomly Generated Clip Path</h1>
+        <div class="container">
+            <div>
+                <button id="gen-btn">Generate</button>
+                <textarea id="output-field"></textarea>
+            </div>
+            <div id="output"></div>
+        </div>
+        <script>
+            const target = document.querySelector("#output");
+            const button = document.querySelector("#gen-btn");
+            const outputField = document.querySelector("#output-field");
+
+            const generatePoints = () => {
+                const number = Math.floor(Math.random() * 60);
+                const points = [];
+                let x = 0;
+                let y = 0;
+                
+                for (let i = 0; i < number; i++) {
+                    // Alternate between x and y
+                    if (i % 2) {
+                      x = Math.floor(Math.random() * 100);
+                    } else {
+                      y = Math.floor(Math.random() * 100);
+                    }
+            
+                    points.push(`${x}% ${y}%`);
+                }
+          
+                target.style.setProperty("--path", `polygon(${points.join(",")})`);
+
+                outputField.value = `clip-path: polygon(${points.join(",")});`
+
+                console.log(`clip-path: polygon(${points});`);
+            };
+
+            // Run on page load & when button is clicked
+            generatePoints();
+            button.addEventListener("click", generatePoints);
+        </script>
+    </body>
+</html>

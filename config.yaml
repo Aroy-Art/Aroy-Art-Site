@@ -1,0 +1,210 @@
+###################### Hugo configuration #######################
+baseURL: "/"
+languageCode: en-gb
+title: Aroy Art
+theme: Rinkusu
+
+# Add an S on the end of titles
+pluralizeListTitles: False
+
+# Enable inline shortcodes in blog posts
+enableInlineShortcodes: True
+
+# Robot.txt file
+enableRobotsTXT: True
+
+# Summary length
+summaryLength: 24
+#################################################################
+
+
+##################### Default Parameters ########################
+params:
+    # Site html character set
+    charset: utf-8
+
+    # Theme color for Android browsers and Vivaldi
+    themeColor: '#ff00d4'
+
+    # Site Favicon in tabbar in browsers. (Path inside static folder)
+    favicon: favicon.png
+
+    # Site Logo
+    logo: /img/Furry-Aroy-Logo-2.1.png
+
+    author: Aroy
+    description: Welcome to the whimsical world of Aroy - a unique blend of a tech nerd and an artist, wrapped in the mysterious charm of a shy cat. This portfolio and blog serve as a window into the creative and technical pursuits of a feline enthusiast with a passion for both code and canvas.
+    copyright: Copyright &copy; 2023 - Design &amp; Content by Aroy
+    license: This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License if not other mentioned.
+    post_share: True
+    breadcrumbs: true
+    to_top_button: True
+    comments: True
+    
+    # Set to true to fix some problems if built wih Netlify´s build system
+    onNetlify: false
+
+    # Set how to format the date, eg; "2006-01-02", "Monday, Jan 2, 2006"
+    dateFormat : "2006-01-02"
+
+    # RSS Feed settings
+    RSS:
+        fullContents: True
+        rssLimit: 100
+    
+    # Cookie-Box settings
+    cookies:
+        enable: true
+        expire_days: 90
+#################################################################
+
+
+############################ Plugins ############################   
+    plugins:
+        css: # css plugins
+            - link: /plugins/bootstrap/bootstrap.min.css
+            - link: /plugins/nerd-fonts/nerd-fonts-generated.min.css
+            - link: /plugins/magnific-popup/magnific-popup.css
+            - link: /plugins/slick/slick.css
+            - link: https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap
+            - link: /plugins/lightbox/lightbox.min.css
+        js: # js plugins 
+            - link: /plugins/bootstrap/bootstrap.bundle.min.js
+            - link: /plugins/jquery/jquery-3.6.0.min.js
+            - link: /plugins/slick/slick.min.js
+            - link: /plugins/magnific-popup/jquery.magnific-popup.min.js
+            - link: /plugins/masonry/masonry.pkgd.min.js
+            - link: /plugins/lazy-load/lozad.min.js
+            - link: /plugins/lightbox/lightbox.min.js
+#################################################################
+
+
+######################### Social Icons ##########################
+# Nerd Fonts icon pack : https://www.nerdfonts.com/cheat-sheet
+    social:
+      - icon: nf nf-dev-git_branch
+        link: https://git.aroy-art.com
+      - icon: nf nf-fa-github_alt
+        link: https://github.com/Aroy-Art
+      - icon: nf nf-md-matrix
+        link: https://matrix.to/#/@aroy:matrix.aroy-art.com
+      - icon: nf nf-md-shark
+        link: https://fedi.aroy-art.com/@aroy
+      #- icon: nf nf-fa-twitter
+      #  link: https://twitter.com/AroyArt
+      #- icon: nf nf-fa-reddit_alien
+      #  link: https://www.reddit.com/user/Aroy-Art/
+      #- icon: nf nf-fa-instagram
+      #  link: https://www.instagram.com/aroy_art22/
+    
+    sketchfab:
+        enable: true
+        text: I am also on
+        img: /images/logos/social-logos/sketchfab-logo-text.png
+        link: https://sketchfab.com/Aroy-Art
+    
+    itchio:
+        enable: true
+        text: Find my Game Jams on
+        img: /images/logos/social-logos/itchio-logo-white.svg
+        link: https://aroy.itch.io
+
+    utteranc:
+        enable: true
+        repo: Aroy-Art/Aroy-Art-Site-Comments
+        issue_term: pathname
+        label: Comment
+        theme: dark-blue
+#################################################################
+
+
+########################### Markup ##############################
+markup:
+    defaultMarkdownHandler: goldmark
+    goldmark:
+        extensions:
+            definitionList: true
+            footnote: true
+            linkify: true
+            strikethrough: true
+            table: true
+            taskList: true
+            typographer: true
+        parser:
+            autoHeadingID: true
+            autoHeadingIDType: github
+            attribute:
+                block: false
+                title: true
+        renderer:
+            hardWraps: false
+            unsafe: true # Set to "true" if you need to use raw html in blog posts 
+            xhtml: false
+    highlight:
+        anchorLineNos: true
+        codeFences: true
+        guessSyntax: true
+        hl_Lines: ""
+        lineAnchors: ""
+        lineNoStart: 1
+        lineNos: false
+        lineNumbersInTable: true
+        noClasses: false
+        style: fruity
+        tabWidth: 4
+    tableOfContents:
+        endLevel: 3
+        ordered: false
+        startLevel: 2
+#################################################################
+
+
+############################ Outputs ############################
+outputs:
+    home:
+      - HTML
+      - RSS
+#################################################################
+
+
+######################## Navigation bar #########################
+menu:
+    main:
+        - name: Blog
+          pre: ""
+          url: blog/
+          weight: 1
+        - name: Portfolio
+          pre: ""
+          url: portfolio/
+          weight: 2
+        - name: About Me
+          pre: ""
+          url: about/
+          weight: 3
+        - name: Contact
+          pre: '#'
+          url: contact
+          weight: 4
+#    more:
+#        - name: Archive
+#          pre: ""
+#          url: archive
+#          weight: 3
+#        - name: Link Tree
+#          pre: ""
+#          url: link_tree
+#          weight: 1
+#################################################################
+
+
+###################### Language Settings ########################
+Language:
+    en:
+        languageName: EN
+        languageCode: en-gb
+        contentDir: content
+        weight: 1
+        home: Home
+        copyright: Copyright &copy; 2022
+#################################################################

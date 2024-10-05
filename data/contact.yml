@@ -1,0 +1,21 @@
+############################## Contact #############################
+contact:
+    enable : true
+    title : Contact Me
+    content : Drop Me a Message 📨️ #If you have questions fel free to contact me.
+
+    # Contact form
+    contact_form:
+        enable : true
+        netlify : true
+        action : "#" #contact form works with https://formspree.io
+        name : "Your Name *"
+        email : "Your Email *"
+        subject : "Subject *"
+        message : "What's up?"
+        submit : "Submit"
+
+        h_captcha: 
+            enable : false
+            theme : "light" # dark 
+            sitekey : "7e9fcbed-3001-42cb-a416-0966c3d9123f"
