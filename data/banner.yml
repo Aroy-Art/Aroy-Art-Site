@@ -1,0 +1,12 @@
+banner:
+  enable : true
+  bg_image_webp : "/images/header-small.jpg"
+  bg_image : "/images/header-small.jpg"
+  icon : ""
+  title : "Aroy"
+  content: "Welcome to the whimsical world of this kitty."
+  
+  button:
+    enable : true
+    label : "Explore"
+    link : "#navigation"
