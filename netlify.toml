@@ -2,6 +2,12 @@
   publish = "public"
   command = "hugo --minify"
 
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/.well-known/matrix/client"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+
 [context.production.environment]
   HUGO_VERSION = "v0.129.0"
   HUGO_ENV = "production"
