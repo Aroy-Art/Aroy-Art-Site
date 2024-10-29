@@ -87,7 +87,7 @@ params:
       - icon: nf nf-fa-github_alt
         link: https://github.com/Aroy-Art
       - icon: nf nf-md-matrix
-        link: https://matrix.to/#/@aroy:matrix.aroy-art.com
+        link: https://matrix.to/#/@aroy:aroy-art.com
       - icon: nf nf-md-shark
         link: https://fedi.aroy-art.com/@aroy
       #- icon: nf nf-fa-twitter
