@@ -55,7 +55,7 @@ params:
     # Cookie-Box settings
     cookies:
         enable: true
-        expire_days: 90
+        expire_days: 365
 #################################################################
 
 
