@@ -31,6 +31,7 @@ params:
 
     # Site Logo
     logo: /img/Furry-Aroy-Logo-2.1.png
+    logo_alt: A logo of my avatar and my name (Aroy) to the right side of the image.
 
     author: Aroy
     description: Welcome to the whimsical world of Aroy - a unique blend of a tech nerd and an artist, wrapped in the mysterious charm of a shy cat. This portfolio and blog serve as a window into the creative and technical pursuits of a feline enthusiast with a passion for both code and canvas.
@@ -101,12 +102,14 @@ params:
         enable: true
         text: I am also on
         img: /images/logos/social-logos/sketchfab-logo-text.png
+        img_alt: The logo for the sketchfab website. 
         link: https://sketchfab.com/Aroy-Art
     
     itchio:
         enable: true
         text: Find my Game Jams on
         img: /images/logos/social-logos/itchio-logo-white.svg
+        img_alt: The logo for the itch.io platform
         link: https://aroy.itch.io
 
     utteranc:
