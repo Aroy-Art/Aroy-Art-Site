@@ -43,11 +43,18 @@ And to purge the docker system ([Docker Docs](https://docs.docker.com/engine/ref
 docker system prune
 ```
 
+{{< alert theme="info">}}
+For some users the `docker system prune` command dosen't delete the build cache so if thats the case that a look at the [Build system leftovers](#build-system-leftovers) section  
+{{< /alert>}}
+
 ### The old way (Docker < 1.13)
 
 #### Delete Volumes
 
-{{< alert theme="info" >}} // see: https://github.com/chadoe/docker-cleanup-volumes {{< /alert >}}
+{{< alert theme="info" >}}
+For more info and a complete shell script see:
+https://github.com/chadoe/docker-cleanup-volumes
+{{< /alert >}}
 
 ```Shell
 docker volume rm $(docker volume ls -qf dangling=true)
@@ -77,6 +84,20 @@ or
 
 ```Shell
 docker network ls | awk '$3 == "bridge" && $2 != "bridge" { print $1 }'
+```
+
+## Build system leftovers
+
+If your system is also used for building images you might have a look at cleaning up garbage created by the builders using:
+
+```Shell
+docker buildx prune --all
+```
+
+and
+
+```Shell
+docker builder prune --all
 ```
 
 ## Conclusion
