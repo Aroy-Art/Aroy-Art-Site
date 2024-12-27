@@ -2,7 +2,7 @@
 title: Goodies to know for Docker & Docker-Compose
 description: This is my list of use full Docker commands.
 date: 2024-11-06T21:05:38.188Z
-lastmod: 2024-12-27T11:26:27.203Z
+lastmod: 2024-12-27T11:32:00.290Z
 image: /images/blog/Image-Docker-Command-Cheat-Sheet.png
 tags:
   - Cheat-Sheet
@@ -10,7 +10,7 @@ tags:
   - Docker
   - Linux
 slug: docker-compose-cheat-sheet
-draft: true
+draft: false
 ---
 
 This is the colleton of useful knowledge this kitty has gathered for Docker and Docker-Compose over a long time.
