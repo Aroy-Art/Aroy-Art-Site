@@ -1,8 +1,8 @@
 ---
-title: Docker & Compose Cheat Sheet
+title: Goodies to know for Docker & Docker-Compose
 description: This is my list of use full Docker commands.
-date: 2020-12-02T00:00:00.000Z
-lastmod: 2024-09-11T21:04:52.148Z
+date: 2024-11-06T21:05:38.188Z
+lastmod: 2024-12-27T11:26:27.203Z
 image: /images/blog/Image-Docker-Command-Cheat-Sheet.png
 tags:
   - Cheat-Sheet
@@ -13,56 +13,8 @@ slug: docker-compose-cheat-sheet
 draft: true
 ---
 
-# A list of docker commands
+This is the colleton of useful knowledge this kitty has gathered for Docker and Docker-Compose over a long time.
 
----
-
-### List images
-
-```Shell
-docker images [OPTIONS] [REPOSITORY[:TAG]]
-```
-
-#### Options
-
-| Name, shorthand | Default  | Description                                         |
-| :-------------- | :------: | --------------------------------------------------- |
-| `--all, -a`     |          | Show all images (default hides intermediate images) | 
-| `--digests`     |          | Show digests                                        | 
-| `--filter, -f`  |          | Filter output based on conditions provided          |
-| `--format`      |          | Pretty-print images using a Go template             |
-| `--no-trunc`    |          | Don’t truncate output                               |
-| `--quiet, -q`   |          | Only show numeric IDs                               |
-
----
-
-### Remove one or more containers
-
-```Shell
-docker rm [OPTIONS] CONTAINER [CONTAINER...]
-```
-
-#### Options
-
-| Name, shorthand | Default | Description                                             |
-|:----------------|:-------:| ------------------------------------------------------- | 
-|`--force, -f`    |         | Force the removal of a running container (uses SIGKILL) |
-|`--link, -l`     |         | Remove the specified link                               |
-|`--volumes, -v`  |         | Remove anonymous volumes associated with the container  |
-
----
-
-### Stop one or more running containers
-
-```Shell
-docker stop [OPTIONS] CONTAINER [CONTAINER...]
-```
-
-#### Options
-
-| Name, shorthand | Default | Description                                 |
-|:----------------|:-------:| ------------------------------------------- | 
-|`--time, -t`     | 10      | Seconds to wait for stop before killing it. |
 
 ## How to cleanup (unused) resources
 
