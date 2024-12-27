@@ -15,6 +15,7 @@ draft: true
 
 This is the colleton of useful knowledge this kitty has gathered for Docker and Docker-Compose over a long time.
 
+{{< toc >}}
 
 ## How to cleanup (unused) resources
 
