@@ -2,7 +2,7 @@
 title: Goodies to know for Docker & Docker-Compose
 description: This is my list of use full Docker commands.
 date: 2024-11-06T21:05:38.188Z
-lastmod: 2024-12-27T11:32:00.290Z
+lastmod: 2025-01-21T16:32:00.290Z
 image: /images/blog/Image-Docker-Command-Cheat-Sheet.png
 tags:
   - Cheat-Sheet
@@ -16,6 +16,32 @@ draft: false
 This is the colleton of useful knowledge this kitty has gathered for Docker and Docker-Compose over a long time.
 
 {{< toc >}}
+
+---
+
+## Find out what is using disk space
+
+---
+
+To find what is using up space you can run the command:
+
+```Shell
+docker system df
+```
+
+And it will show you a compact summary of
+how much space is being used by containers,
+images, networks, volumes etc.
+
+If you need a more detailed view of what exactly
+is using up space you can run the command with the '-v' flag:
+
+```Shell
+docker system df -v
+```
+
+And it will show you all the containers, volumes,
+build caches and images that are taking up space.
 
 ## How to cleanup (unused) resources
 
@@ -53,7 +79,7 @@ For some users the `docker system prune` command dosen't delete the build cache 
 
 {{< alert theme="info" >}}
 For more info and a complete shell script see:
-https://github.com/chadoe/docker-cleanup-volumes
+<https://github.com/chadoe/docker-cleanup-volumes>
 {{< /alert >}}
 
 ```Shell
