@@ -112,7 +112,7 @@ or
 docker network ls | awk '$3 == "bridge" && $2 != "bridge" { print $1 }'
 ```
 
-## Build system leftovers
+### Build system leftovers
 
 If your system is also used for building images you might have a look at cleaning up garbage created by the builders using:
 
