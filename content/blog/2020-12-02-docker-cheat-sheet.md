@@ -126,6 +126,41 @@ and
 docker builder prune --all
 ```
 
+---
+
+## Health Checks
+
+### Docker Compose depends on health check pass
+
+```YAML
+    depends_on:
+      db:
+        condition: service_healthy
+
+```
+
+### Docker Compose Postgres health check
+
+```YAML
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+```
+
+### Docker Compose Redis/Valkey health check
+
+```YAML
+    healthcheck:
+      test: "redis-cli ping"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+```
+
+---
+
 ## Conclusion
 
 First of thanks for reading this.
