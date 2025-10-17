@@ -130,11 +130,15 @@ docker builder prune --all
 
 ## Health Checks
 
+Docker Compose has a built in health check feature that can be used to check if your containers are up and running.
+
 ### Docker Compose depends on health check pass
+
+You can also use the health check feature to make sure that a service is up and running before starting services that depending on it.
 
 ```YAML
     depends_on:
-      db:
+      <service name>:
         condition: service_healthy
 
 ```
