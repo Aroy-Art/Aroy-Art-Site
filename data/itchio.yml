@@ -1,0 +1,28 @@
+itchio:
+  enable: true
+  title: Game Jams
+  description: Game from game jams i have made.
+
+  categories:
+    - name: Game Jam Entries
+      items:
+        - name: Gnomin'
+          image: https://img.itch.zone/aW1nLzE4MDY5MTU3LnBuZw==/original/wleoBD.png
+          link: https://bonk-group.itch.io/gnomin
+          tags: ["Ludum Dare 56", "Ludum Dare"]
+          content: A difficult physics based 2D platformer about a gnome lost in a cave! Created for Ludum Dare 56
+          slideshow: true
+
+        - name: Hook Away
+          image: https://img.itch.zone/aW1nLzEyNzM3NTQxLnBuZw==/original/4FwzKT.png
+          link: https://basicmilky.itch.io/hook-away
+          tags: ["GMTK23", "GMTK"]
+          content: Oh no, the pesky human are trying to chatch us again!
+          slideshow: true
+
+        - name: Keep it Steaming
+          image: https://img.itch.zone/aW1nLzg1ODQwMzMucG5n/original/3ufwaD.png
+          link: https://basicmilky.itch.io/keep-it-steaming
+          tags:
+          content: Mink, you have a long journey ahead! Repair the train and ensure the train travels as far as possible!
+          slideshow: true
