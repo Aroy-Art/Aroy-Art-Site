@@ -1,7 +1,9 @@
 itchio:
   enable: true
   title: Game Jams
-  description: Game from game jams i have made.
+  description: >-
+    Game Jams are an event where people from all over the world come together to create small games over a short time frame commonly a weekend to a specific theme.
+    Here is some of games i have made with others in jams.
 
   categories:
     - name: Game Jam Entries
