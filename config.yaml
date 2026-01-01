@@ -179,15 +179,6 @@ menu:
       pre: "#"
       url: contact
       weight: 4
-#    more:
-#        - name: Archive
-#          pre: ""
-#          url: archive
-#          weight: 3
-#        - name: Link Tree
-#          pre: ""
-#          url: link_tree
-#          weight: 1
 #################################################################
 
 ###################### Language Settings ########################
