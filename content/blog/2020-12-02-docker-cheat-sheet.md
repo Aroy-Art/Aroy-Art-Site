@@ -5,10 +5,10 @@ date: 2024-11-06T21:05:38.188Z
 lastmod: 2025-01-21T16:32:00.290Z
 image: /images/blog/Image-Docker-Command-Cheat-Sheet.png
 tags:
-  - Cheat-Sheet
   - Command-Line
-  - Docker
-  - Linux
+  - cheat-sheet
+  - docker
+  - linux
 slug: docker-compose-cheat-sheet
 draft: false
 ---
