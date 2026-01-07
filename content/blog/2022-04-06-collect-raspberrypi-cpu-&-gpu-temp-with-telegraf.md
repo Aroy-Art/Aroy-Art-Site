@@ -5,8 +5,8 @@ lastmod: 2024-02-12T07:50:48.484Z
 image: /images/blog/8RLV4tpYwkRSyWbM.webp
 description: How to collect Raspberry Pi CPU and GPU temperature with Telegraf to later display it in a nice Grafana Dashboard.
 tags:
-  - Linux
   - Monitoring
+  - linux
 draft: false
 slug: collect-raspberry-pi-cpu-gpu-temp-telegraf
 ---

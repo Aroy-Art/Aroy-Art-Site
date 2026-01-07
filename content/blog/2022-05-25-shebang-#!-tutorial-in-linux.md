@@ -6,8 +6,8 @@ lastmod: 2024-09-11T21:10:00.957Z
 image: /images/blog/shebang.jpg
 draft: false
 tags:
-  - Linux
-  - Cheat-Sheet
+  - cheat-sheet
+  - linux
 slug: shebang-tutorial-linux
 ---
 
