@@ -1,7 +1,7 @@
 ---
 title: Cyberpunk - Style Glitch Text Walkthrough
 date: 2024-07-23T18:35:26.560Z
-lastmod: 2024-09-11T20:48:16.374Z
+lastmod: 2026-01-07T21:27:23.319Z
 image: /images/blog/2024-07-23-cyberpunk-style-glitch-text-walkthrough/Peek 2024-07-24 22-34.gif
 description: Discover how to create a cyberpunk-style glitch text effect using pure CSS. This guide covers text layering, clip-paths, and animations for a dynamic, futuristic look. Dive in and start glitching!
 tags:
@@ -1001,7 +1001,7 @@ There's an art to getting this transition to work without making the user feel m
 
 ## Font
 
-The next layer is changes to the font directly. These could be any properties, but we'll stick to font-weight and color.
+The next layer is changes to the font directly. These could be any properties, but we'll stick to font-weight, blur and color.
 
 <h2 class="hero font">EXAMPLE</h2>
 
