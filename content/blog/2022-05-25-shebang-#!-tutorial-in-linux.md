@@ -1,8 +1,8 @@
 ---
 title: "Shebang #! Tutorial In Linux"
-description: ""
+description: Concise explanation of shebang (#!) in Linux, including syntax and usage.
 date: 2022-05-25T12:50:05.057Z
-lastmod: 2024-09-11T21:10:00.957Z
+lastmod: 2026-01-07T20:26:01.315Z
 image: /images/blog/shebang.jpg
 draft: false
 tags:
@@ -31,7 +31,7 @@ The shebang has the following syntax where the interpreter executable file path 
 
 ## Common Shebangs
 
-|Type / Language | Syntax             | 
+|Type / Language | Syntax             |
 |----------------|--------------------|
 | Sh             | #!/bin/sh          |
 | Bash           | #!/bin/bash        |
