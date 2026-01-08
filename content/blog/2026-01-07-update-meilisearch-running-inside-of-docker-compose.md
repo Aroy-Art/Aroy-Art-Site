@@ -44,6 +44,7 @@ docker compose exec meilisearch curl -X POST 'http://localhost:7700/dumps' \
 ```
 
 Check the `/tasks` endpoint to ensure the status is `succeeded`.
+
 ```Bash
 docker compose exec meilisearch curl 'http://localhost:7700/tasks?types=dumpCreation' \
   -H "Authorization: Bearer YOUR_MASTER_KEY"
