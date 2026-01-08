@@ -145,6 +145,10 @@ You can also use the health check feature to make sure that a service is up and 
 
 ### Docker Compose Postgres health check
 
+{{< alert theme="info" >}}
+ If you don't have a root user Postgres will spam your logs with `FATAL: role "root" does not exist` to prevent that add `-U postgres` to the end of the `pg_isready` command.
+{{< /alert >}}
+
 ```YAML
     healthcheck:
       test: ["CMD-SHELL", "pg_isready"]
