@@ -16,7 +16,7 @@ draft: false
 
 Upgrading between major Meilisearch releases isn't as simple as changing an image tag. Because Meilisearch uses a highly optimized internal database structure, its data files (`data.ms`) are version-specific. If you try to point Meilisearch `v1.31` at a `v1.12` database, it will crash on startup.
 
-In this post, we’ll walk through how to migrate your data using a temporary migration container with Docker Compose—keeping your production config clean and your data safe.
+In this post, we’ll walk through how to migrate your data using a temporary migration container with Docker Compose — keeping your production config clean and your data safe.
 
 {{< toc >}}
 
@@ -50,7 +50,7 @@ docker compose exec meilisearch curl 'http://localhost:7700/tasks?types=dumpCrea
   -H "Authorization: Bearer YOUR_MASTER_KEY"
 ```
 
-Your dump file will now be sitting in your mapped volume (e.g., `./MeiliData/dumps/20260107-155552777.dump`). Dubble check that it is there before you move on to the next phase.
+Your dump file will now be located in your mapped volume (e.g., `./MeiliData/dumps/20260107-155552777.dump`). Dubble check that it is there before you move on to the next phase.
 
 ### Phase 2: The "Clean Slate"
 
@@ -107,11 +107,11 @@ When the one-off container is done importing e.g.:
 2026-01-07T16:10:00.411385Z  INFO actix_server::server: starting service: "actix-web-service-0.0.0.0:7700", workers: 56, listening on: 0.0.0.0:7700
 ```
 
-and has started successfully you need to stop the container with `CTRL`+`C`  
+and has started successfully, you need to stop the container with `CTRL`+`C`  
 
 ### Phase 4: Finalizing the Upgrade
 
-No that the old data in imported into the new Meilisearch version, simply start your stack backup:
+Now that the old data is imported into the new Meilisearch version, simply start your stack backup:
 
 ```bash
 docker compose up -d meilisearch
