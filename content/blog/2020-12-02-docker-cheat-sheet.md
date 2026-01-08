@@ -1,8 +1,8 @@
 ---
 title: Goodies to know for Docker & Docker-Compose
-description: This is my list of use full Docker commands.
+description: A colleton of useful knowledge this kitty has gathered for Docker and Docker-Compose over a long time.
 date: 2024-11-06T21:05:38.188Z
-lastmod: 2025-01-21T16:32:00.290Z
+lastmod: 2026-01-08T00:41:25.241Z
 image: /images/blog/Image-Docker-Command-Cheat-Sheet.png
 tags:
   - Command-Line
