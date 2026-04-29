@@ -1,0 +1,26 @@
+{
+    "name": "aroy-art.com",
+    "version": "1.0.0",
+    "description": "![Status](https://uptime.aroy-art.com/api/badge/1/status) [![Netlify Status](https://api.netlify.com/api/v1/badges/17a4ec01-7490-42df-822b-b5b6f808bca7/deploy-status)](https://app.netlify.com/sites/aroy-art/deploys)",
+    "main": "index.js",
+    "scripts": {
+        "build": "hugo",
+        "build:prod": "hugo --environment production && node purge-css.mjs",
+        "build:dev": "hugo --environment development --minify --cleanDestinationDir -D && node purge-css.mjs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Aroy-Art/Aroy-Art-Site.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/Aroy-Art/Aroy-Art-Site/issues"
+    },
+    "homepage": "https://github.com/Aroy-Art/Aroy-Art-Site#readme",
+    "devDependencies": {
+        "purgecss": "^8.0.0"
+    }
+}

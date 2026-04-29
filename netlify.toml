@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "hugo --minify"
+command = "npm run build:prod"
 
 [[headers]]
 # Define which paths this specific [[headers]] block will cover.
@@ -14,7 +14,7 @@ HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
 [context.deploy-preview]
-command = "hugo --minify"
+command = "npm run build:prod"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "v0.150.1"
