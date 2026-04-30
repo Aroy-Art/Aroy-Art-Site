@@ -2,6 +2,7 @@
 # -- Folders -- #
 #################
 .vscode/
+node_modules/
 public/
 resources/_gen/
 Tmp/
