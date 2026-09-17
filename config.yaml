@@ -1,6 +1,6 @@
 ###################### Hugo configuration #######################
 baseURL: "/"
-languageCode: en-gb
+locale: en-gb
 title: Aroy Art
 theme: Rinkusu
 
@@ -17,6 +17,11 @@ enableRobotsTXT: True
 summaryLength: 24
 #################################################################
 
+####################### Hugo Modules ############################
+module:
+  imports:
+    - path: github.com/divinerites/plausible-hugo
+#################################################################
 
 ##################### Default Parameters ########################
 params:
@@ -58,6 +63,21 @@ params:
   cookies:
     enable: true
     expire_days: 365
+
+  robots:
+    enabled: true # Set to false to prevent robots.txt generation
+    disallow_all: false # Block all bots (overrides other disallow rules)
+    allow_all: true # Allow all bots (default behavior if disallow_all is false and no specific paths are disallowed)
+    blocked_bots:
+      - "AhrefsBot"
+      - "SemrushBot"
+      - "MJ12bot"
+    disallowed_paths:
+      - "/private/"
+      - "/admin/"
+      - "/tags/" # Example: To prevent indexing of tag pages if desired
+    sitemap_enabled: true # Set to false to remove sitemap from robots.txt
+
   #################################################################
 
   ############################ Plugins ############################
@@ -84,12 +104,22 @@ params:
   social:
     - icon: nf nf-dev-git_branch
       link: https://git.aroy-art.com
+      name: Forgejo
     - icon: nf nf-fa-github_alt
       link: https://github.com/Aroy-Art
+      name: GitHub
     - icon: nf nf-md-matrix
       link: https://matrix.to/#/@aroy:aroy-art.com
+      name: Matrix
     - icon: nf nf-md-shark
       link: https://fedi.aroy-art.com/@aroy
+      name: Fediverse
+    #- icon: nf nf-fa-twitter
+    #  link: https://twitter.com/AroyArt
+    #- icon: nf nf-fa-reddit_alien
+    #  link: https://www.reddit.com/user/Aroy-Art/
+    #- icon: nf nf-fa-instagram
+    #  link: https://www.instagram.com/aroy_art22/
 
   sketchfab:
     enable: true
@@ -179,14 +209,24 @@ menu:
       pre: "#"
       url: contact
       weight: 4
+#  more:
+#    - name: Archive
+#      pre: ""
+#      url: archive
+#      weight: 3
+#    - name: Link Tree
+#      pre: ""
+#      url: link_tree
+#      weight: 1
 #################################################################
 
 ###################### Language Settings ########################
 Language:
   en:
     languageName: EN
-    languageCode: en-gb
+    locale: en-gb
     contentDir: content
     weight: 1
     home: Home
+    copyright: Copyright &copy; 2022
 #################################################################
