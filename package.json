@@ -5,9 +5,9 @@
     "main": "index.js",
     "scripts": {
         "build": "hugo",
-        "build:prod": "hugo --environment production && node purge-css.mjs",
-        "build:dev": "hugo --environment development --minify --cleanDestinationDir && node purge-css.mjs",
-        "build:drafts": "hugo --environment development --minify --cleanDestinationDir --buildDrafts && node purge-css.mjs"
+        "build:prod": "hugo --environment production && bun purge-css.mjs",
+        "build:dev": "hugo --environment development --minify --cleanDestinationDir && bun purge-css.mjs",
+        "build:drafts": "hugo --environment development --minify --cleanDestinationDir --buildDrafts && bun purge-css.mjs"
     },
     "repository": {
         "type": "git",
