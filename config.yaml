@@ -79,7 +79,6 @@ params:
   plugins:
     css: # css plugins
       - link: /plugins/bootstrap/bootstrap.min.css
-      - link: /plugins/nerd-fonts/nerd-fonts-generated.min.css
       - link: /plugins/magnific-popup/magnific-popup.css
       - link: /plugins/slick/slick.css
       - link: https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap
@@ -95,25 +94,26 @@ params:
   #################################################################
 
   ######################### Social Icons ##########################
-  # Nerd Fonts icon pack : https://www.nerdfonts.com/cheat-sheet
+  # Inline SVG icons from the theme's assets/icons folder, as <set>/<name>
+  # lucide/ : https://lucide.dev   brand/ : https://simpleicons.org
   social:
-    - icon: nf nf-dev-git_branch
+    - icon: brand/forgejo
       link: https://git.aroy-art.com
       name: Forgejo
-    - icon: nf nf-fa-github_alt
+    - icon: brand/github
       link: https://github.com/Aroy-Art
       name: GitHub
-    - icon: nf nf-md-matrix
+    - icon: brand/matrix
       link: https://matrix.to/#/@aroy:aroy-art.com
       name: Matrix
-    - icon: nf nf-md-shark
+    - icon: brand/fediverse
       link: https://fedi.aroy-art.com/@aroy
       name: Fediverse
-    #- icon: nf nf-fa-twitter
+    #- icon: brand/x
     #  link: https://twitter.com/AroyArt
-    #- icon: nf nf-fa-reddit_alien
+    #- icon: brand/reddit
     #  link: https://www.reddit.com/user/Aroy-Art/
-    #- icon: nf nf-fa-instagram
+    #- icon: brand/instagram
     #  link: https://www.instagram.com/aroy_art22/
 
   sketchfab:

@@ -48,7 +48,7 @@ for (const file of cssFiles) {
       content,
       css: [file],
       safelist,
-      fontFace: false,   // keep @font-face (needed for nerd-fonts, slick)
+      fontFace: false,   // keep @font-face (needed for slick)
       keyframes: false,  // keep @keyframes
       variables: false,  // keep CSS custom properties
     })
