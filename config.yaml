@@ -56,7 +56,7 @@ params:
 
   # Cookie-Box settings
   cookies:
-    enable: true
+    enable: false
     expire_days: 365
 
   robots:
@@ -81,7 +81,6 @@ params:
       - link: /plugins/bootstrap/bootstrap.min.css
       - link: /plugins/magnific-popup/magnific-popup.css
       - link: /plugins/slick/slick.css
-      - link: https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap
       - link: /plugins/lightbox/lightbox.min.css
     js: # js plugins
       - link: /plugins/bootstrap/bootstrap.bundle.min.js
@@ -136,6 +135,7 @@ params:
     issue_term: pathname
     label: Comment
     theme: dark-blue
+    crossorigin: anonymous
 #################################################################
 
 ########################### Markup ##############################
