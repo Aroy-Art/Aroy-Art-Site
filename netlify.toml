@@ -7,6 +7,12 @@ command = "bun run build:prod"
 for = "/.well-known/matrix/client"
 [headers.values]
 Access-Control-Allow-Origin = "*"
+Content-Type = "application/json"
+
+[[headers]]
+for = "/.well-known/matrix/server"
+[headers.values]
+Content-Type = "application/json"
 
 [context.production.environment]
 HUGO_VERSION = "v0.165.0"
